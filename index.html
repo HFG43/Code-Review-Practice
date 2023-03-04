@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Fork Me! FCC: Test Suite Template</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <h1 id="title" >Questionaire</h1>
+    
+    <p id="description">Form</p>
+    <form id="survey-form">
+      <div class="names">
+        <div>
+        <label id="name-label">Name:<input id="name" type="text" required placeholder="What's your name?"></label>
+      </div>
+      <div>
+        <label id="email-label">email:<input type="email" id="email" required placeholder="type your e-mail"></label>
+      </div>  
+      <div>
+      <label id="number-label">Your Age:<input type="number" id="number" requierd placeholder="How old are you?" 
+                
+        min="0" max="200"></label>
+      </div>
+      </div>
+      
+      <div class="drop">
+        <h3>Would you recommend freeCodeCamp to a friend?</h3>
+      <select id="dropdown">
+        
+        <option value="Definetly">Definetly</option>
+        <option value="Maybe">May be</option>
+        <option value="Notsure">Not sure</option>
+      </select>
+      </div>
+      <div class="radio">
+      <h3>What do you enjoy the most?</h3>
+      <label><input type="radio" value="Challenges" name="radio"> Challenges:</label>
+      <label><input type="radio" value="Projects" name="radio"> Projects:</label>
+      <label><input type="radio" value="Community" name="radio"> Community:</label>
+      </div>
+
+      <div class="check">
+      <h3>Which is your prefered program?</h3>
+      <label><input type="checkbox" value="JS" name="program"> JavaScript</label>
+      <label><input type="checkbox" value="HTML" name="program"> HTML</label>
+      <label><input type="checkbox" value="CSS" name="program"> CSS</label>
+      </div>
+      <div>
+      <h3 class="suggestion">Suggestions</h3>  
+      <textarea cols="25" rows="5" placeholder="Leave here your comments"></textarea>
+      </div>
+      <button id="submit">Submit</button>
+
+    </form>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script  src="js/index.js"></script>
+  </body>
+</html>
